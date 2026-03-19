@@ -13,13 +13,24 @@ const repeatedWords = [
   "matter"
 ];
 
-function howManyTimes() {}
+function howManyTimes(repeatedWords) {
+ repeatedWords = repeatedWords.split('');
+ let wordToSearch = 0;
+ for(let i = 0; i < repeatedWords.length; i++);
+  if(repeatedWords == wordToSearch[i]);
+  return wordToSearch
+  }
 
+  console.log(howManyTimes(repeatedWords))
 
 
 
 // Iteration 2 | Number Sequence
-function createSequence() {}
+function createSequence(number) {
+  for (let i = 0; i < number.length; i++)
+    console.log(createSequence)
+ return createSequence
+}
 
 
 
@@ -27,7 +38,11 @@ function createSequence() {}
 // Iteration 3 | Multiply for Each
 const numbers = [1, 2, 5, 10, 13, 50];
 
-function multiplyBy() {}
+function multiplyBy(numbers) {
+  let
+ //** for (let i=O; i=)
+
+}
 
 
 
@@ -36,7 +51,11 @@ function multiplyBy() {}
 const original = ["cat", "dog", "fish", "bird", "cat", "fish"];
 const toRemove = ["cat", "dog"];
 
-function filterOut() {}
+function filterOut(original) {
+  let filterOut = catch.pop(), dog.pop()
+
+
+}
 
 
 
