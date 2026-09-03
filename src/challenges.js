@@ -20,7 +20,7 @@ function howManyTimes(arr, word) {
     count++;
   }
 }
-  return count;
+  return wordToSearch;
  }
 
 
