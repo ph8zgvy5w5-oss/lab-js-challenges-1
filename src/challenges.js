@@ -13,23 +13,30 @@ const repeatedWords = [
   "matter"
 ];
 
-function howManyTimes(repeatedWords) {
- repeatedWords = repeatedWords.split('');
+function howManyTimes(arr, word) {
  let wordToSearch = 0;
- for(let i = 0; i < repeatedWords.length; i++);
-  if(repeatedWords == wordToSearch[i]);
-  return wordToSearch
+ for (let i = 0; i < arr.length; i++){
+  if (arr[i] === word){
+    count++;
   }
+}
+  return count;
+ }
 
-  console.log(howManyTimes(repeatedWords))
+
 
 
 
 // Iteration 2 | Number Sequence
 function createSequence(number) {
-  for (let i = 0; i < number.length; i++)
-    console.log(createSequence)
- return createSequence
+  if (number === 0){
+    return [];
+  }
+   const newArr = [];
+   for (let i = 0; i <= number; i++){
+    newArr.push(i);
+   }
+   return newArr;
 }
 
 
@@ -38,25 +45,32 @@ function createSequence(number) {
 // Iteration 3 | Multiply for Each
 const numbers = [1, 2, 5, 10, 13, 50];
 
-function multiplyBy(numbers) {
-  let
- //** for (let i=O; i=)
-
+function multiplyBy(arrOfNums, num) {
+  const newArray = [];
+  arrOfNums.forEach(function (currentNumber) {
+    newArray.push(currentNumber * num);
+  });
+  return newArray;
 }
-
-
 
 
 // Iteration 4 | Filter Out
 const original = ["cat", "dog", "fish", "bird", "cat", "fish"];
 const toRemove = ["cat", "dog"];
 
-function filterOut(original) {
-  let filterOut = catch.pop(), dog.pop()
+function filterOut(originalArr, toRemoveArr) {
+  if (!originalArr.length) return null;
 
+  const filteredArr = [];
+  for (let i = 0; i < originalArr.length; i++) {
+    const currentElement = originalArr[i];
+    if (!toRemoveArr.includes(currentElement)) {
+      filteredArr.push(currentElement);
+    }
+  }
 
+return filteredArr;
 }
-
 
 
 
@@ -75,7 +89,16 @@ const duplicateWords = [
   "bring"
 ];
 
-function uniquifyArray() {}
+function uniquifyArray(arr) {
+  if (!arr.length) return null;
+  const newArr = [];
+  arr.forEach((word, index, wholeArray) =>{
+    if (!newArr.includes(word)){
+      newArr.push(word)
+    }
+  });
+  return newArr;
+}
 
 
 
